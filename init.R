@@ -3,7 +3,7 @@
 # R code to install packages if not already installed
 #
 
-my_packages = c("ggplot2","e1071","caret","randomForest","irlba", "dplyr","doSNOW", "data.table")
+my_packages = c("ggplot2","e1071","caret","randomForest", "dplyr","data.table")
 
 install_if_missing = function(p) {
   if (p %in% rownames(installed.packages()) == FALSE) {
